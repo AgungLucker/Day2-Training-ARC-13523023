@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding : 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #2d2929;
+    margin: 0;
+}
+
+nav {
+    background-color: #423c3c;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 1.5rem;
+}
+
+.navbar-container {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    gap:20px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding-right:15px;
+
+
+}
+
+.search-bar input{
+    width:30%;
+    padding:4px;
+    background-color: white;
+    border-radius:8px;
+}
+.app-title {
+    color:rgb(218, 207, 207)
+}
+
+#products {
+    margin-top:80px;
+    padding: 25px;
+    justify-content: center;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 5px;
+    width:100%;
+    justify-content: center;
+}
+
+.productCard {
+    padding: 10px;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height:250px;
+    padding:10px;
+    overflow: hidden;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px 4px 4px 4px;
+    text-align:start;
+    font-size: 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.imageContainer:hover img {
+    filter: blur(3px);
+}
+
+.imageContainer:hover .description {
+    visibility: visible;
+    opacity: 1;
+}
+.productDesc {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 5px 10px 5px;
+    text-align: start;
+}
+
+.productDesc h3 {
+    color: rgb(200, 190, 178);
+}
+
+
+.priceRating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:6px 0px 2px 0px;
+}
+
+.price {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.rating {
+    background-color:bisque;
+    border-radius: 10px;
+    padding:2px;
+}
+
+
