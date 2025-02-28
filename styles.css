@@ -144,7 +144,7 @@ nav {
     align-items: center;
     background-color:rgb(203, 215, 33);
     border-radius: 10px;
-    padding: 4px;
+    padding: 5px;
     gap: 5px;
 }
 
@@ -152,9 +152,9 @@ nav {
     background-color:rgb(162, 172, 32)
 }
 
-.rating-image {
-    width: 15px !important;  
-    height: 15px !important;
+.ratingIcon {
+    width: 15px;  
+    height: 15px;
     object-fit: contain;
 }
 

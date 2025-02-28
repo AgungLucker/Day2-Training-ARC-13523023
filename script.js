@@ -45,7 +45,7 @@ function showProducts(allData) {
         const ratingIcon = document.createElement("img");
         ratingIcon.src="asset/star.png";
         ratingIcon.alt="Rating Icon";
-        ratingIcon.classList.add("rating-icon");
+        ratingIcon.classList.add("ratingIcon");
 
         const rating = document.createElement("p");
         rating.textContent = `${product.rating} / 5`;
