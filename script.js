@@ -38,6 +38,14 @@ function showProducts(allData) {
         const price = document.createElement("p");
         price.textContent = `$${product.price}`;
         price.classList.add("price");
+        
+        const ratingContainer = document.createElement("div");
+        ratingContainer.classList.add("ratingContainer");
+
+        const ratingIcon = document.createElement("img");
+        ratingIcon.src="asset/star.png";
+        ratingIcon.alt="Rating Icon";
+        ratingIcon.classList.add("rating-icon");
 
         const rating = document.createElement("p");
         rating.textContent = `${product.rating} / 5`;
@@ -51,10 +59,13 @@ function showProducts(allData) {
         productDesc.appendChild(name);
         
         priceRating.appendChild(price);
-        priceRating.appendChild(rating);
+        ratingContainer.appendChild(ratingIcon);
+        ratingContainer.appendChild(rating);
+        priceRating.appendChild(ratingContainer);
         productDesc.appendChild(priceRating);
 
         productsContainer.appendChild(productCard);
+        
     });
 }
 

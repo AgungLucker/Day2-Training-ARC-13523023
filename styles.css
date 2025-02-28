@@ -101,7 +101,7 @@ nav {
     color: white;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .imageContainer:hover img {
@@ -139,14 +139,23 @@ nav {
     font-weight: bold;
 }
 
-.rating {
+.ratingContainer {
+    display:flex;
+    align-items: center;
     background-color:rgb(203, 215, 33);
     border-radius: 10px;
-    padding:3px;
+    padding: 4px;
+    gap: 5px;
 }
 
-.rating:hover {
+.ratingContainer:hover {
     background-color:rgb(162, 172, 32)
+}
+
+.rating-image {
+    width: 15px !important;  
+    height: 15px !important;
+    object-fit: contain;
 }
 
 
